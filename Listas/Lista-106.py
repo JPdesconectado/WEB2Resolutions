@@ -69,6 +69,7 @@ def separarCPF():
 
     listinha = remove_repetidos(listinha)
     arquivo = open('CPFsInteiros.txt', 'w')
+    print("CPFS Não Repetidos: ", len(listinha))
     for l in range(0, len(listinha)):
         arquivo.write(listinha[l] + "\n")
         
