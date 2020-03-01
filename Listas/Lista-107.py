@@ -1,3 +1,33 @@
+professor1 = {'id': 42, 'name': 'Alexandre Abreu', 'age': 30, 'state_origin': 'Minas Gerais', 'courses': ['Inteligência Artificial', 'Mineração de Dados', 'Programação para Internet I', 'Programação para Internet II']}
+print(type(professor1))
+print(professor1)
+
+# Tamanho
+print(len(professor1))
+# Chaves
+print(professor1.keys())
+# Valores
+print(professor1.values())
+
+professor2 = {'id': 37, 'name': 'Denilson Barbosa', 'age': 40, 'state_origin': 'Paraná', 'courses': ['Inteligência Artificial', 'Banco de Dados I', 'Banco de Dados II', 'Programação para Internet I']}
+
+# Primeira disciplina
+print(professor2['courses'][0])
+
+# Utilizando construtor
+professor3 = dict(id=28, name='Jorge Armino', idade=37)
+print(type(professor3))
+print(professor3)
+
+# adicionando chave e valor em um dict jah existente
+professor3['state_origin'] = 'Rio Grande do Sul'
+professor3['courses'] = ['Filosofia', 'Informática e Sociedade']
+print(professor3)
+
+# Acessar um valor em um dict
+print(professor1['state_origin'])
+
+
 ###
 # Exercicio
 ###
@@ -72,3 +102,14 @@ print(tuple.count(2))
 
 # tuple.reverse()
 # tuple.sort()
+
+
+
+# 3
+
+professor1['Latitude'] = '90'
+professor1['Longitude'] = '0'
+professor2['Latitude'] = '50'
+professor2['Longitude'] = '25'
+professor3['Latitude'] = '190'
+professor3['Longitude'] = '45'
